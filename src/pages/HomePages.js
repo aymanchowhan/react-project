@@ -31,6 +31,7 @@ function HomePages() {
             <Header />
             <div><Link to={'/about'}>go to about</Link></div>
             <h1 className="text-3xl font-bold">
+                
                 {storedData}
             </h1>
             <ChildComponent data={veriable} arrayData={data}/>
