@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import { Link } from 'react-router-dom'
 import ChildComponent from '../components/ChildComponent'
+import TernoryAndUseState from '../components/TernoryAndUseState';
 
 function HomePages() {
     localStorage.setItem('myData', 'This is sample data stored in localStorage');
@@ -31,10 +32,10 @@ function HomePages() {
             <Header />
             <div><Link to={'/about'}>go to about</Link></div>
             <h1 className="text-3xl font-bold">
-                
                 {storedData}
             </h1>
             <ChildComponent data={veriable} arrayData={data}/>
+            <TernoryAndUseState/>
         </>
     )
 }
