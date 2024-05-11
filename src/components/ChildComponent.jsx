@@ -13,7 +13,7 @@ function ChildComponent({ arrayData, sampleText }) {
             <strong>{sampleText}</strong>
             <div className="flex gap-3">
                 {
-                     arrayData.map((item, index) =>
+                     arrayData&&arrayData.map((item, index) =>
                         <div className="bg-blue-400 w-60 rounded-[15px]">
                             <h2 className="text-center">Name</h2>
                             <h1 className="text-center font-bold">{item.title}</h1>
