@@ -36,19 +36,19 @@ const navMenu = [
 function Header() {
   const [isHover, setIsHover] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
-  console.log(isOpen)
-  console.log(isHover)
+
   return (
-    <div className='container m-auto'>
-      <div className='h-16 bg-slate-700 flex justify-between text-white px-10 text-lg mt-4'>
+    <div className='bg-slate-700'>
+    <div className='container m-auto relative'>
+      <div className='h-16 flex justify-between text-white px-10 text-lg py-4'>
         <div className='my-auto'>Ayman's Watch</div>
         <div className='my-auto flex'>
-          <div onClick={() => setIsOpen(!isOpen)}>
+          <div className='cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
             {
-              !isOpen ?
-                <RxHamburgerMenu className='lg:hidden text-3xl' />
-                :
-                <IoClose className='lg:hidden text-3xl' />
+              isOpen ?
+              <IoClose className='lg:hidden text-3xl' />
+              :
+              <RxHamburgerMenu className='lg:hidden text-3xl' />
             }
           </div>
           <div className='hidden lg:block'>
@@ -63,12 +63,24 @@ function Header() {
               }
             </div>
           </div>
-
+        </div>
+      </div>
+      <div className={`lg:hidden bg-white absolute z-10 left-3 right-3 p-[30px] rounded-md ${isOpen?'block':'hidden'}`}>
+        <div className='gap-10'>
+          { 
+            navMenu.map((item, index) =>
+              <div style={{fontSize:'18px'}} className='relative cursor-pointer hover:bg-black duration-500 hover:text-white rounded-md p-[5px] my-1'>
+                {item.name}
+              </div>
+            )
+          }
         </div>
       </div>
 
 
     </div>
+    </div>
+
   )
 }
 
