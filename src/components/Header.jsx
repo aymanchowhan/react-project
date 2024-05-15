@@ -57,7 +57,7 @@ function Header() {
                 navMenu.map((item, index) =>
                   <div className='relative hover:cursor-pointer' onMouseOut={() => setIsHover(null)} onMouseOver={() => setIsHover(index)}>
                     {item.name}
-                    <div className={`${isHover == index ? 'w-[140%]' : 'w-0'} -bottom-[10px] bg-white h-[2px]  absolute left-1/2 transform -translate-x-1/2 duration-300`}></div>
+                    <div className={`${isHover === index ? 'w-[140%]' : 'w-0'} -bottom-[10px] bg-white h-[2px]  absolute left-1/2 transform -translate-x-1/2 duration-300`}></div>
                   </div>
                 )
               }
