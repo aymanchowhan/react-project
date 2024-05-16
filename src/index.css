@@ -13,14 +13,25 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.hero-bg{
+.hero-bg {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (min-width: 1024px) {
+  .hero-bg {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  }
+
 }
 
-.h2-title{
-font-family: "Josefin Sans", sans-serif;
+.servic-bg {
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
 }
 
-.p-subtitle{
-font-family: "Rubik", sans-serif;
+.h2-title {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.p-subtitle {
+  font-family: "Rubik", sans-serif;
 }

@@ -2,50 +2,55 @@ import React from 'react'
 import { LiaStaylinked } from "react-icons/lia";
 import { FaPen } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa6";
-import { TbVectorOff } from "react-icons/tb";
 import { BiSolidCoinStack } from "react-icons/bi";
+import { LiaCropSolid } from "react-icons/lia";
 function Service() {
   const data = [
     {
-      icon: <FaPen className=' text-white text-sm m-auto bg-[#1980FA] rounded-full h-[70px] w-[70px] flex mb-[20px] mx-auto text-center' />,
+      icon: <FaPen className='m-auto' />,
+      iconBgCol: '#1980FA',
       title: "Pixel Perfect",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit! Quia"
+      description: "In at iaculis lorem ipsum. Praesent tempor dictum"
     },
     {
-      icon: <FaCloud  className=' text-white text-sm m-auto bg-[#9919fa] rounded-full h-[70px] w-[70px] flex mb-[20px] mx-auto text-center'/>,
+      icon: <FaCloud className='m-auto' />,
+      iconBgCol: '#9919FA',
       title: "Cloud Service",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit! Quia"
+      description: "In at iaculis lorem ipsum. Praesent tempor dictum"
     },
     {
-      icon: <TbVectorOff className=' text-white text-sm m-auto bg-[#faa719] rounded-full h-[70px] w-[70px] flex mb-[20px] mx-auto text-center' />,
+      icon: <LiaCropSolid className='m-auto' />,
+      iconBgCol: '#FAA719',
       title: "Vector Editing",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit! Quia"
+      description: "In at iaculis lorem ipsum. Praesent tempor dictum"
     },
     {
-      icon: <BiSolidCoinStack className=' text-white text-sm m-auto bg-[#19b5fa] rounded-full h-[70px] w-[70px] flex mb-[20px] mx-auto text-center' />,
+      icon: <BiSolidCoinStack className='m-auto' />,
+      iconBgCol: '#19B5FA',
       title: "Export Presets",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit! Quia"
+      description: "In at iaculis lorem ipsum. Praesent tempor dictum"
     },
   ]
   return (
-    <div className='container mx-auto'>
-      <div className='bg-[#1980FA] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto text-center'>
+    <div className='container mx-auto pt-[150px] pb-[70px]'>
+      <div className='bg-[#526377] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto text-center'>
         <LiaStaylinked className=' text-white text-3xl m-auto' />
       </div>
-      <div className='text-center text-[36px] h2-title font-bold'>Much more Exclusive features</div>
+
+      <div className='text-center text-[34px] text-[#0f1d46] lg:text-[60px] h2-title font-bold lg:leading-[4rem] mb-[90px]'>Much more <br /> exclusive features</div>
 
 
-      <div className='grid grid-cols-4 w-[992px] h-[45vh] px-[15px] mx-auto gap-12'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[88%] mx-auto gap-8 pb-10'>
         {
           data.map((item, index) => (
-            <div className='bg-white'>
-              <div>
+            <div className=' p-[30px] shadow-2xl hover:shadow-black hover:shadow-2xl'>
+              <div style={{ backgroundColor: item.iconBgCol }} className={`h-[70px] w-[70px] mx-auto rounded-full flex text-white text-2xl mb-[30px]`}>
                 {item.icon}
               </div>
-              <div>
+              <div className='text-2xl font-bold text-center h2-title text-[#0F1D46] mb-[15px]'>
                 {item.title}
               </div>
-              <div>
+              <div className='text-center text-base p-subtitle text-[#0F1D46] opacity-70'>
                 {item.description}
               </div>
             </div>

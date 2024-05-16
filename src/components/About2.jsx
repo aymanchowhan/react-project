@@ -3,7 +3,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import bgImage from '../assets/img/circle-bg.png'
 import img from '../assets/img/wtach-section-1.png'
 
-function About() {
+export const About2 = () => {
     return (
         <div className='container m-auto py-[150px]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 h-96'>
@@ -29,4 +29,3 @@ function About() {
     )
 }
 
-export default About
