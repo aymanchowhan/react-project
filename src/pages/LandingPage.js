@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
-
+import Service from '../components/Service'
 function LandingPage() {
   return (
-    <div className='relative'>
+    <><div className='relative'>
       <div className='fixed z-10 left-0 right-0'>
         <Header />
       </div>
@@ -13,8 +13,10 @@ function LandingPage() {
         <Hero />
       </div>
       <About />
-    </div>
+    </div><div className='bg-yellow-200 h-[140vh]'>
+<Service></Service>
+      </div></>
   )
 }
 
-export default LandingPage
+export default LandingPage 
