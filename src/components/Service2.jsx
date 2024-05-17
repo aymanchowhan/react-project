@@ -8,27 +8,27 @@ import img4 from '../assets/img/w4.png'
 
 const data = [
     {
-        title: 'Web Development',
-        subtitle: 'We build websites that serve as powerful marketing tools and bring memorable brand experiences.',
-        price: '$1000',
+        title: 'Apple Watch 3 Special Edition',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
+        price: 'Only  ₹100',
         img: img1,
     },
     {
-        title: 'Web Development',
-        subtitle: 'We build websites that serve as powerful marketing tools and bring memorable brand experiences.',
-        price: '$1000',
+        title: ' Apple Watch 3 Special Edition',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
+        price: 'Only $100',
         img: img2,
     },
     {
-        title: 'Web Development',
-        subtitle: 'We build websites that serve as powerful marketing tools and bring memorable brand experiences.',
-        price: '$1000',
+        title: ' Apple Watch 3 Special Edition',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
+        price: 'Only $100',
         img: img3,
     },
     {
-        title: 'Web Development',
-        subtitle: 'We build websites that serve as powerful marketing tools and bring memorable brand experiences.',
-        price: '$1000',
+        title: 'Apple Watch 3 Special Edition',
+        subtitle:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
+        price: 'Only $100',
         img: img4,
     },
 ]
@@ -37,26 +37,31 @@ function Service2() {
     return (
         <div className='container m-auto py-[300px] px-[10px]'>
             <Swiper
-            loop={true}
-             className="mySwiper"
-             >
+                loop={true}
+                className="mySwiper"
+            >
                 {
                     data.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className='grid grid-cols-2'>
                                 {/* Left content  */}
                                 <div className="">
-                                    <div>{item.title}</div>
-                                    <div>{item.subtitle}</div>
+                                    <div className='text-[60px] h2-title font-bold mb-[10px] text-white'>
+                                        {item.title}</div>
+                                    <div className='text-[16px] p-subtitle mb-[30px] text-white '>
+                                        {item.subtitle}</div>
                                     <div>
-                                        <button>Buy It Now</button>
+                                    <button className='px-[50px] py-[18px] rounded-md hover:text-[#103178] bg-[#103178] text-[20px] hover:bg-white duration-500 h2-title m-auto lg:m-0'>
+                        Buy it Now!
+                    </button>
                                     </div>
-                                    <div>{item.price}</div>
+                                    <div className='text-[60px] p-subtitle font-bold text-white'>
+                                        {item.price}</div>
                                 </div>
-                                
+
                                 {/* right content  */}
                                 <div className="">
-                                    <img src={item.img} alt="" className='m-auto' />
+                                    <img src={item.img} alt="" className='m-auto h-[500px]' />
                                 </div>
                             </div>
                         </SwiperSlide>
