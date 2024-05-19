@@ -6,19 +6,19 @@ import nyc from '../assets/img/nyc.png';
 function Contact() {
     const data = [
         {
-            img: "",
+            img: dubai,
             title: "UAE",
             desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptas?",
             cont: "+97 45522522",
         },
         {
-            img:"" ,
+            img: london ,
             title: "London",
             desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptas?",
             cont: "+97 45522522",
         },
         {
-            img: "",
+            img: nyc,
             title: "New York City",
             desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptas?",
             cont: "+97 45522522",
@@ -38,17 +38,15 @@ function Contact() {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[88%] mx-auto gap-8 pb-10'>
         {
           data.map((item, index) => (
-            <div className=' p-[100px]'>
-              <div>
-                {item.img}
-              </div>
+            <div className=' p-[30px] shadow-2xl hover:shadow-black hover:shadow-2xl'>
+            <img src={item.img} className='mx-auto mb-4'/>
               <div className='text-2xl font-bold text-center h2-title text-[#0F1D46] mb-[15px]'>
                 {item.title}
               </div>
-              <div className='text-center text-base p-subtitle text-[#0F1D46] opacity-70'>
+              <div className='text-center text-base p-subtitle text-[#0F1D46] mb-[15px]'>
                 {item.desc}
               </div>
-              <div className='text-center text-base p-subtitle text-[#0F1D46]'>
+              <div className='text-center h2-title text-[22px] text-[#0F1D46]'>
                 {item.cont}
               </div>
             </div>

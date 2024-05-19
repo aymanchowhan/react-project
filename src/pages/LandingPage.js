@@ -6,6 +6,9 @@ import Service from '../components/Service'
 import { About2 } from '../components/About2'
 import Service2 from '../components/Service2'
 import Contact from '../components/Contact'
+import Price from '../components/Price'
+import Gallary from '../components/Gallary'
+import Testimonial from '../components/Testimonial'
 function LandingPage() {
   return (
     <><div className='relative'>
@@ -20,6 +23,15 @@ function LandingPage() {
       <Service />
       <div className='servic-bg bg-gradient-to-r from-[#5040F4] to-[#31B4FE]'>
         <Service2 />
+      </div>
+      <div>
+        <Gallary />
+       </div>
+       <div>
+        <Testimonial />
+       </div>
+      <div>
+        <Price />
       </div>
     </div>
     <div>
