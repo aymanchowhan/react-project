@@ -27,7 +27,7 @@ const data = [
     },
     {
         title: 'Apple Watch 3 Special Edition',
-        subtitle:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
         price: 'Only $99',
         img: img4,
     },
@@ -35,7 +35,7 @@ const data = [
 
 function Service2() {
     return (
-        <div className='container m-auto py-[300px] px-[10px]'>
+        <div className='container m-auto py-[300px] px-10'>
             <Swiper
                 loop={true}
                 className="mySwiper"
@@ -51,9 +51,9 @@ function Service2() {
                                     <div className='text-[16px] p-subtitle mb-[30px] text-white text-center lg:text-left'>
                                         {item.subtitle}</div>
                                     <div className='text-center lg:text-left'>
-                                    <button className='px-[50px] py-[18px] mb-[30px] rounded-md hover:text-[#103178] bg-[#103178] text-[20px] hover:bg-white duration-500 h2-title m-auto lg:mb-[40px]'>
-                        Buy it Now!
-                    </button>
+                                        <button className='px-[50px] py-[18px] mb-[30px] rounded-md hover:text-[#103178] bg-[#103178] text-[20px] hover:bg-white text-white duration-500 h2-title m-auto lg:mb-[40px]'>
+                                            Buy it Now!
+                                        </button>
                                     </div>
                                     <div className=' text-[36px] lg:text-[60px] p-subtitle font-bold text-white text-center lg:text-left'>
                                         {item.price}</div>

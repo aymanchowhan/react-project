@@ -7,7 +7,7 @@ export const About2 = () => {
     return (
         <div className='container m-auto py-[150px]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 h-96'>
-                <div>
+                <div className='ml-10'>
                     <div className='bg-[#1980FA] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto lg:mx-0'>
                         <IoIosBasketball className=' text-white text-3xl m-auto' />
                     </div>

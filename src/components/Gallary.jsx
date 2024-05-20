@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { PiCubeTransparentFill } from "react-icons/pi";
@@ -10,6 +10,8 @@ import img5 from '../assets/img/w2.png';
 import img6 from '../assets/img/w3.png';
 import img7 from '../assets/img/w4.png';
 function Gallary() {
+    const [isHovered, setIsHovered] = useState(null)
+
     const data = [
         {
             img: img1,
@@ -48,9 +50,11 @@ function Gallary() {
         },
     ]
     return (
-        <div className='container mx-auto pt-[150px] pb-[70px]'>
+        <div className='container mx-auto pt-[150px] pb-[70px] lg:px-40'>
             <div className='bg-[#3c89e0] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto text-center'>
                 <PiCubeTransparentFill className=' text-white text-3xl m-auto' />
+            </div>
+            <div className='text-center text-[34px] text-[#0f1d46] lg:text-[60px] h2-title font-bold lg:leading-[4rem] mb-[90px]'>New Arrivals exclusive watches
             </div>
             <Swiper
                 breakpoints={{
@@ -67,7 +71,7 @@ function Gallary() {
                         slidesPerView: 3,
                     },
                     // for laptop view
-                    1024:{
+                    1024: {
                         slidesPerView: 4,
                     },
 
@@ -78,18 +82,13 @@ function Gallary() {
                 {
                     data.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className='grid grid-cols-1 lg:grid-cols-4'>
+                            <div className={`m-[15px] p-[30px] rounded-lg shadow-xl`} onMouseOver={() => setIsHovered(index)} onMouseOut={() => setIsHovered(null)}>
+                                <img src={item.img} alt="" className={`m-auto h-[182px] w-[154px] duration-500 text-center mb-7 ${isHovered == index ? 'scale-125' : ''}`} />
+                                <div className={`text-[22px] p-subtitle mb-[15px] text-center`}>
+                                    {item.title}</div>
 
-                                <div className="">
-                                    <img src={item.img} alt="" className='m-auto h-[500px]' />
-                                    <div className='text-[16px] p-subtitle mb-[30px] text-white text-left'>
-                                        {item.title}</div>
-                                    <div className='text-left'>
-                                    </div>
-                                    <div className=' text-[36px] lg:text-[60px] p-subtitle font-bold text-white text-center lg:text-left'>
-                                        {item.price}</div>
-                                </div>
-
+                                <div className=' text-[22px] h2-title font-bold text-center text-[#1980FA]'>
+                                    {item.price}</div>
                             </div>
                         </SwiperSlide>
                     ))
@@ -98,8 +97,7 @@ function Gallary() {
         </div>
     )
 }
-<div className='text-center text-[34px] text-[#0f1d46] lg:text-[60px] h2-title font-bold lg:leading-[4rem] mb-[90px]'>New Arrivals exclusive watches
-</div>
+
 
 
 export default Gallary

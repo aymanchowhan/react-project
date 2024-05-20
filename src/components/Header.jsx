@@ -38,7 +38,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='bg-slate-700'>
+    <div className='bg-gradient-to-r from-[#5040F4] to-[#31B4FE]'>
     <div className='container m-auto relative'>
       <div className='h-16 flex justify-between text-white px-10 text-lg py-4'>
         <div className='my-auto'>Ayman's Watch</div>

@@ -43,7 +43,7 @@ function Price() {
                 {item.price}
               </div>
               <div className='text-center mt-[30px]'>
-                 <button className='  px-[50px] py-[18px] rounded-md hover:text-[#103178] bg-[#103178] text-[16px] hover:bg-white duration-500 h2-title m-auto lg:m-0'>
+                 <button className='  px-[50px] py-[18px] rounded-md bg-[#576EA0] text-[16px] hover:bg-gradient-to-l hover:from-[#664DD7] hover:to-[#5B96FF] text-white duration-500 h2-title m-auto lg:m-0'>
                         Get Started!
                     </button>
                     </div>
