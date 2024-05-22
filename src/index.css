@@ -25,7 +25,13 @@ body {
 }
 
 .servic-bg {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (min-width: 1024px) {
+.servic-bg {
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
+}
 }
 
 .h2-title {

@@ -34,22 +34,22 @@ function Footer() {
   return (
     <footer className='relative'>
       {/* <div className='footer-bg bg-gradient-to-r from-[#5040F4] to-[#31B4FE] absolute h-full left-0 top-0 right-0 -mt-36'/> */}
-      <div className='m-auto container w-[80%] pb-[100px]'>
-        <div iv className='p-[100px] rounded-xl shadow-2xl shadow-blue-500 bg-white'>
+      <div className='m-auto container w-[90%] lg:w-[80%] pb-[100px] '>
+        <div className='lg:p-[100px] p-[30px] rounded-xl shadow-2xl shadow-blue-500 bg-white'>
           <div className='bg-blue-500 flex mx-auto h-[70px] w-[70px] rounded-full mb-[50px]'>
             <IoAirplaneSharp className='m-auto text-white text-2xl' />
           </div>
-          <div className='text-center text-[#0f1d46] h2-title font-bold text-[60px] leading-[4rem] mb-[30px]'>
+          <div className='text-center text-[#0f1d46] h2-title font-bold text-[36px] lg:text-[60px] lg:leading-[4rem] mb-[30px]'>
             Never miss any <br /> update
           </div>
-          <div className='flex w-[100%]'>
+          <div className='lg:flex lg:w-[100%]'>
             <input
               type='email'
-              className='w-[75%] mr-[15px] py-[17px] px-[20px] border-2 rounded-lg focus:outline-gray-500 duration-700'
+              className='lg:w-[75%] w-full lg:mr-[15px] py-[17px] px-[20px] border-2 rounded-lg focus:outline-gray-500 duration-700 mb-[30px] lg:mb-0'
               placeholder='your email'
             />
-            <div className='flex w-[25%]'>
-              <button className='bg-[#1980FA] w-full rounded-md text-[16px] h2-title duration-500 font-bold text-white hover:shadow-2xl hover:shadow-[#1980FA] mx-auto lg:mx-0'>
+            <div className='flex lg:w-[25%]'>
+              <button className='bg-[#1980FA] w-full rounded-md text-[16px] h2-title duration-500 font-bold text-white hover:shadow-2xl hover:shadow-[#1980FA] mx-auto lg:mx-0 py-[18px]'>
                 Pre-Book Your Order
               </button>
             </div>
@@ -62,48 +62,48 @@ function Footer() {
 
 
       <div className='bg-gradient-to-r from-[#5040F4] to-[#31B4FE]'>
-        <div className='grid grid-cols-4 gap-8 container m-auto text-white px-10 py-[80px]'>
+        <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 container m-auto text-white px-10 py-[80px] '>
           <div>
-            <div className='h2-title text-[22px] mb-[20px]'>
+            <div className='h2-title text-center lg:text-left text-[22px] mb-[20px]'>
               About Us
             </div>
-            <div className='p-subtitle'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+            <div className='p-subtitle text-center lg:text-left'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
           </div>
           <div>
-            <div className='h2-title text-[22px] mb-[20px]'>
+            <div className='h2-title text-center lg:text-left text-[22px] mb-[20px]'>
               Quick Link
             </div>
             {
               QuickLinks.map((item, i) =>
-                <div key={i} onMouseOver={() => setHoveredQuickLink(i)} onMouseOut={() => setHoveredQuickLink(null)} className='p-subtitle mb-[10px] flex cursor-pointer'>
-                  <div className={`${hoveredQuickLink == i ? 'w-6 mr-1' : 'w-0'} h-[2px] bg-white  duration-300 mt-[15px]`}></div>
+                <div key={i} onMouseOver={() => setHoveredQuickLink(i)} onMouseOut={() => setHoveredQuickLink(null)} className='p-subtitle mb-[10px] flex cursor-pointer justify-center items-center lg:justify-start'>
+                  <div className={`${hoveredQuickLink == i ? 'w-6 mr-1' : 'w-0'} h-[2px] bg-white duration-300 mt-[15px]`}></div>
                   {item.title}
                 </div>
               )
             }
           </div>
           <div>
-            <div className='h2-title text-[22px] mb-[20px]'>
+            <div className='h2-title text-[22px] mb-[20px] text-center lg:text-left'>
               Support
             </div>
             {
               supportLinks.map((item, i) =>
-                <div key={i} onMouseOver={() => setHoveredSupportLink(i)} onMouseOut={() => setHoveredSupportLink(null)} className='p-subtitle mb-[10px] flex cursor-pointer'>
-                  <div className={`${hoveredSupportLink == i ? 'w-6 mr-1' : 'w-0'} h-[2px] bg-white  duration-300 mt-[15px]`}></div>
+                <div key={i} onMouseOver={() => setHoveredSupportLink(i)} onMouseOut={() => setHoveredSupportLink(null)} className='p-subtitle mb-[10px] flex cursor-pointer justify-center items-center lg:justify-start'>
+                  <div className={`${hoveredSupportLink == i ? 'w-6 mr-1' : 'w-0'} h-[2px] bg-white duration-300 mt-[15px]`}></div>
                   {item.title}
                 </div>
               )
             }
           </div>
           <div>
-            <div className='h2-title text-[22px] mb-[20px]'>
+            <div className='h2-title text-center lg:text-left text-[22px] mb-[20px]'>
               Social
             </div>
-            <div className='p-subtitle mb-[30px]'>Please connect with our social profiles.</div>
-            <div className='flex gap-6'>
+            <div className='p-subtitle mb-[30px] text-center lg:text-left'>Please connect with our social profiles.</div>
+            <div className='flex gap-6 justify-center items-center lg:justify-start'>
               {
                 SocialLinks.map((item, i) =>
-                  <div key={i} className='text-lg my-auto hover:text-[#576EA0] cursor-pointer duration-500'>
+                  <div key={i} className='text-lg my-auto hover:text-[#576EA0] cursor-pointer duration-500 '>
                     {item.icon}
                   </div>
                 )

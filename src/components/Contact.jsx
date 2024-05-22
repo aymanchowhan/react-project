@@ -38,7 +38,7 @@ function Contact() {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[88%] mx-auto gap-8 pb-10'>
         {
           data.map((item, index) => (
-            <div className=' p-[30px] shadow-2xl'>
+            <div className=' p-[30px]'>
             <img src={item.img} className='mx-auto mb-4'/>
               <div className='text-2xl font-bold text-center h2-title text-[#0F1D46] mb-[15px]'>
                 {item.title}

@@ -8,7 +8,7 @@ import img4 from '../assets/img/w4.png'
 
 const data = [
     {
-        title: 'Ahello hi on',
+        title: ' Apple Watch 3 Special Edition',
         subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt at quidem tempora libero quae error ipsa minus animi vel.',
         price: 'Only $99',
         img: img1,
@@ -35,7 +35,7 @@ const data = [
 
 function Service2() {
     return (
-        <div className='container m-auto py-[300px] px-10'>
+        <div className='container m-auto py-[100px] px-10'>
             <Swiper
                 loop={true}
                 className="mySwiper"
@@ -46,7 +46,7 @@ function Service2() {
                             <div className='grid grid-cols-1 lg:grid-cols-2'>
                                 {/* Left content  */}
                                 <div className="">
-                                    <div className=' text-[36px] lg:text-[60px] h2-title font-bold mb-[10px] text-white'>
+                                    <div className='text-center lg:text-left text-[36px] lg:text-[60px] h2-title font-bold mb-[10px] text-white'>
                                         {item.title}</div>
                                     <div className='text-[16px] p-subtitle mb-[30px] text-white text-center lg:text-left'>
                                         {item.subtitle}</div>
