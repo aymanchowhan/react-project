@@ -35,7 +35,7 @@ const data = [
 
 function Service2() {
     return (
-        <div className='container m-auto py-[100px] px-10'>
+        <div className='container m-auto py-[100px] lg:py-[300px] px-10'>
             <Swiper
                 loop={true}
                 className="mySwiper"
@@ -43,7 +43,7 @@ function Service2() {
                 {
                     data.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className='grid grid-cols-1 lg:grid-cols-2'>
+                            <div className='grid grid-cols-1 lg:grid-cols-2 p-[10px]'>
                                 {/* Left content  */}
                                 <div className="">
                                     <div className='text-center lg:text-left text-[36px] lg:text-[60px] h2-title font-bold mb-[10px] text-white'>

@@ -19,27 +19,27 @@ function Price() {
         },
     ]
     return (
-        <div className='container mx-auto pt-[150px] pb-[70px]'>
-            <div className='bg-[#3c89e0] rounded-full h-[70px] w-[70px] flex mb-[30px] mx-auto text-center'>
-                <FaDollarSign className=' text-white text-xl m-auto' />
+        <div className='container mx-auto py-[100px] lg:py-[300px] text-white '>
+            <div className='bg-[white] rounded-full h-[70px] w-[70px] flex mb-[30px] mx-auto text-center'>
+                <FaDollarSign className=' text-[#3c89e0] text-xl m-auto' />
             </div>
 
-            <div className='text-center text-[34px] text-[#0f1d46] lg:text-[60px] h2-title font-bold lg:leading-[4rem] mb-[40px]'>People always loves our product
+            <div className='text-center text-[34px] text-white lg:text-[60px] h2-title font-bold lg:leading-[4rem] mb-[40px]'>People always loves our product
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-[88%] mx-auto gap-8 p-[50px]'>
+            <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-[88%] mx-auto gap-8 p-[50px] text-white '>
             {
           data.map((item, index) => (
-            <div className=' p-[50px] shadow-2xl hover:shadow-black hover:shadow-3xl'>
-                <div className='mb-[15px] text-center'>
+            <div className=' bg-white p-[50px] shadow-2xl rounded-lg hover:shadow-black hover:shadow-3xl text-white'>
+                <div className='mb-[15px] text-center text-[#828b8e]'>
                     1 User
                 </div>
               <div className='text-black text-[26px] mb-[30px] text-center h2-title font-bold' >
                 {item.title}
               </div>
-              <div className='text-[16px] text-center p-subtitle text-[#0F1D46B3] mb-[30px]'>
+              <div className='text-[16px] text-center p-subtitle text-[#828b8e] mb-[30px]'>
                 {item.desc}
               </div>
-              <div className='text-center h2-title text-[60px] '>
+              <div className='text-center h2-title text-[60px] text-[#3c89e0] font-extrabold'>
                 {item.price}
               </div>
               <div className='text-center mt-[30px]'>

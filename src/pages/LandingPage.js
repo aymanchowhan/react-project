@@ -28,7 +28,9 @@ function LandingPage() {
         </div>
         <Gallary />
         <Testimonial />
+        <div className='servic-bg bg-gradient-to-r from-[#5040F4] to-[#31B4FE]'>
         <Price />
+        </div>
         <Contact />
         <div className=''>
         <Footer />
