@@ -109,7 +109,7 @@ function Testimonial() {
         }
       </Swiper>
 
-      <div className='flex justify-center gap-3'>
+      <div className='flex justify-center gap-3 mb-[50px]'>
         {
           data.map((item, i) =>
             <div key={i}>

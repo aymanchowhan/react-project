@@ -5,7 +5,7 @@ import img from '../assets/img/wtach-section-1.png'
 
 function About() {
     return (
-        <div className='container m-auto py-[150px]'>
+        <div className='container m-auto py-[100px] px-[50px]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 h-96'>
                 <div className='hidden lg:block relative'>
                     <img src={bgImage} alt="" srcset="" className='absolute -top-[20%] -left-[20%]' />

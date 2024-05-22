@@ -61,7 +61,7 @@ function Service2() {
 
                                 {/* right content  */}
                                 <div className="">
-                                    <img src={item.img} alt="" className='m-auto h-[500px]' />
+                                    <img src={item.img} alt="" className='m-auto w-[282px] h-[310px] lg:w-[457px] lg:h-[500px]' />
                                 </div>
                             </div>
                         </SwiperSlide>

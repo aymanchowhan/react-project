@@ -19,14 +19,14 @@ function Price() {
         },
     ]
     return (
-        <div className='container mx-auto py-[100px] lg:py-[300px] text-white '>
-            <div className='bg-[white] rounded-full h-[70px] w-[70px] flex mb-[30px] mx-auto text-center'>
+        <div className='container lg:mx-auto py-[100px] lg:py-[300px] text-white '>
+            <div className='bg-[white] rounded-md h-[70px] w-[70px] flex mb-[30px] mx-auto text-center'>
                 <FaDollarSign className=' text-[#3c89e0] text-xl m-auto' />
             </div>
 
             <div className='text-center text-[34px] text-white lg:text-[60px] h2-title font-bold lg:leading-[4rem] mb-[40px]'>People always loves our product
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-[88%] mx-auto gap-8 p-[50px] text-white '>
+            <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-[88%] mx-auto gap-8 p-[10px] lg:p-[100px] text-white'>
             {
           data.map((item, index) => (
             <div className=' bg-white p-[50px] shadow-2xl rounded-lg hover:shadow-black hover:shadow-3xl text-white'>
@@ -43,7 +43,7 @@ function Price() {
                 {item.price}
               </div>
               <div className='text-center mt-[30px]'>
-                 <button className='  px-[50px] py-[18px] rounded-md bg-[#576EA0] text-[16px] hover:bg-gradient-to-l hover:from-[#664DD7] hover:to-[#5B96FF] text-white duration-500 h2-title m-auto lg:m-0'>
+                 <button className=' h-[64px] w-[189px] px-[50px] py-[18px] rounded-md bg-[#576EA0] text-[16px] hover:bg-gradient-to-l hover:from-[#664DD7] hover:to-[#5B96FF] text-white duration-500 h2-title m-auto lg:m-0'>
                         Get Started!
                     </button>
                     </div>
