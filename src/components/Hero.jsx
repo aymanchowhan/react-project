@@ -20,9 +20,8 @@ import { EffectFade, Autoplay } from 'swiper/modules';
 const data = [img1, img2, img3, img4]
 function Hero() {
     const [visibleImg, setVisibleImg] = React.useState(0)
-    console.log('visibleImg', visibleImg)
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-5 h-[70vh] pt-52 container mx-auto'>
+        <div id='home' className='grid grid-cols-1 lg:grid-cols-2 gap-x-5 h-[70vh] pt-52 container mx-auto'>
             <div className='h2-title text-white px-10' >
                 <div className='font-bold lg:leading-[4rem] text-center lg:text-left leading-[2.5rem] text-[34px] lg:text-[60px] mb-[30px]'>
                     The best landing page for your digital product.

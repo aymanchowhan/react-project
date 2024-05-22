@@ -11,7 +11,6 @@ function TernoryAndUseState() {
         setIsLoading(false)
     }, 3000);
 
-    console.log(isLoading)
 
     return (
         <>

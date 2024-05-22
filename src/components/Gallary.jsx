@@ -50,7 +50,7 @@ function Gallary() {
         },
     ]
     return (
-        <div className='container mx-auto pt-[150px] pb-[70px] lg:px-40'>
+        <div id='gallary' className='container mx-auto pt-[150px] pb-[70px] lg:px-40'>
             <div className='bg-[#3c89e0] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto text-center'>
                 <PiCubeTransparentFill className=' text-white text-3xl m-auto' />
             </div>

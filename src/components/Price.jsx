@@ -19,8 +19,8 @@ function Price() {
         },
     ]
     return (
-        <div className='container lg:mx-auto py-[100px] lg:py-[300px] text-white '>
-            <div className='bg-[white] rounded-md h-[70px] w-[70px] flex mb-[30px] mx-auto text-center'>
+        <div id='price' className='container lg:mx-auto py-[100px] lg:py-[300px] text-white '>
+            <div className='bg-[white] rounded-full h-[70px] w-[70px] flex mb-[30px] mx-auto text-center'>
                 <FaDollarSign className=' text-[#3c89e0] text-xl m-auto' />
             </div>
 

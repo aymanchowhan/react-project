@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoIosBasketball } from "react-icons/io";
 import bgImage from '../assets/img/circle-bg.png'
 import img from '../assets/img/wtach-section-2.png'
 
 export const About2 = () => {
+    const [isSmall, setIsSmall] = useState(false)
+    useEffect(() => {
+     setTimeout(() => {
+        setIsSmall(!isSmall)
+     }, 1500);
+    }, [isSmall])
+    
     return (
         <div className='container m-auto py-[100px] px-[50px]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 h-96'>
@@ -21,8 +28,8 @@ export const About2 = () => {
                     </div>
                 </div>
                 <div className='hidden lg:block relative'>
-                    <img src={bgImage} alt="" srcset="" className='absolute -top-[10%] -left-[10%]' />
-                    <img src={img} alt="" srcset="" className='absolute' />
+                    <img src={bgImage} alt="" srcset="" className='absolute -top-[10%] -right-[10%]' />
+                    <img src={img} alt="" srcset="" className={`absolute -top-[10%] -right-[10%] ${isSmall?'scale-75':'scale-90'} duration-[2000ms]`} />
                 </div>
             </div>
         </div>

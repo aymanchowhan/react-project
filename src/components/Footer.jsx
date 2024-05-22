@@ -32,7 +32,7 @@ function Footer() {
   ]
 
   return (
-    <footer className='relative'>
+    <footer id='contact' className='relative'>
       {/* <div className='footer-bg bg-gradient-to-r from-[#5040F4] to-[#31B4FE] absolute h-full left-0 top-0 right-0 -mt-36'/> */}
       <div className='m-auto container w-[90%] lg:w-[80%] pb-[100px] '>
         <div className='lg:p-[100px] p-[30px] rounded-xl shadow-2xl shadow-blue-500 bg-white'>

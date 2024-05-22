@@ -6,8 +6,7 @@ function ChildComponent({ arrayData, sampleText }) {
     setTimeout(() => {
         setStoredData(localData);
     }, 3000);
-    console.log('storedData', storedData);
-
+ 
     return (
         <>
             <strong>{sampleText}</strong>

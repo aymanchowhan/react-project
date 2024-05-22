@@ -58,7 +58,7 @@ function Testimonial() {
     },
   ]
   return (
-    <div className='container m-auto lg:px-20'>
+    <div id='testimonials' className='container m-auto lg:px-20'>
       <div className='pt-[150px] pb-[70px]'>
         <div className='bg-[#3c89e0] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto text-center'>
           <SlEnergy className=' text-white text-3xl m-auto' />

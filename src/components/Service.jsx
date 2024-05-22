@@ -32,7 +32,7 @@ function Service() {
     },
   ]
   return (
-    <div className='container mx-auto pt-[150px] pb-[70px]'>
+    <div id='service' className='container mx-auto pt-[150px] pb-[70px]'>
       <div className='bg-[#526377] rounded-full h-[70px] w-[70px] flex mb-[40px] mx-auto text-center'>
         <LiaStaylinked className=' text-white text-3xl m-auto' />
       </div>
